@@ -4,6 +4,7 @@ if(isset($_GET['id'])){
     $id = $_GET['id'];
     $sql = "DELETE FROM task WHERE id =$id";
 
+
     $ress = mysqli_query($conn, $sql);
 
     if(!$ress){
